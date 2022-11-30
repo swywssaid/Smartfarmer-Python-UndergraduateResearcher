@@ -1,14 +1,4 @@
 # ''' 파일을 read 하여 리스트에 저장하고, 그 리스트에 있는 문자열을 골라서 삭제 '''
-#
-# with open("2020-02-059.차량사람및영상_sample/sampleTxt/20201125_경기도_성남시_분당구_맑음_주간_실외_front_0025739.txt", "r") as f:
-#     lines = f.readlines()
-# with open("2020-02-059.차량사람및영상_sample/sampleTxt/20201125_경기도_성남시_분당구_맑음_주간_실외_front_0025739.txt", "w") as f:
-#     for line in lines:
-#         line.replace("(","")
-#         line.replace(")","")
-#         line.replace("'","")
-#         f.write(line)
-
 def replace_in_file(file_path, old_str, new_str):
     # 파일 읽어들이기
     fr = open(file_path, 'r')
